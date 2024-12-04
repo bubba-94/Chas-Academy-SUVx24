@@ -1,0 +1,42 @@
+[
+    {
+        "id": 0,
+        "person": {
+            "birth_year": 1968,
+            "email": "antje@gmail.com",
+            "first_name": "Antje",
+            "last_name": "Svensson",
+            "phone": "0709663300"
+        }
+    },
+    {
+        "id": 1,
+        "person": {
+            "birth_year": 1947,
+            "email": "gunsan60@gmail.com",
+            "first_name": "Gun",
+            "last_name": "Svensson",
+            "phone": "0702657822"
+        }
+    },
+    {
+        "id": 2,
+        "person": {
+            "birth_year": 1999,
+            "email": "",
+            "first_name": "Amir",
+            "last_name": "Sana",
+            "phone": "0762658977"
+        }
+    },
+    {
+        "id": 3,
+        "person": {
+            "birth_year": 1239,
+            "email": "boka@klippoteket.se",
+            "first_name": "Klippoteket",
+            "last_name": "",
+            "phone": "+46705889963"
+        }
+    }
+]

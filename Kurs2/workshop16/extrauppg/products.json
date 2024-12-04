@@ -1,0 +1,30 @@
+[
+    {
+        "id": 1,
+        "product": {
+            "name": "Nike Air Max",
+            "description": "Sneakers",
+            "price": 1199,
+            "quantity": 10
+        }
+    },
+    {
+        "id": 2,
+        "product": {
+            "name": "Nike Stefan Janoski",
+            "description": "Sneakers",
+            "price": 899,
+            "quantity": 20
+        }
+    }
+]  
+
+
+
+
+
+
+
+
+
+

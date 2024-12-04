@@ -1,0 +1,2 @@
+Hello world, from inide the file.
+This should be the second line in the text file
