@@ -11,10 +11,11 @@ int main ()
 {
     int size{};
 
-    std::cout << "\nHow many persons?"; 
+    std::cout << "\nHow many persons?\n";
+    std::cout << "Enter: "; 
     std::cin >> size;
     std::cin.ignore();
-    Person *personptr = new Person[size];
+    Person* personptr = new Person[size];
 
     for (int i = 0; i < size; i++)
     {
@@ -26,7 +27,7 @@ int main ()
         std::cin.ignore();
     }
 
-    std::cout << "A full list of all persons\n";
+    std::cout << "\nA full list of all persons\n";
 
     for (int i = 0; i < size; i++)
     {
@@ -34,13 +35,6 @@ int main ()
         std::cout << "Person [" << i + 1 << "]\n";
         std::cout << "Name: " << personptr[i].name << "\n";
         std::cout << "Birthyear: " << personptr[i].birthyear << "\n";
-    }
-    for (int i = 0; i < size; i++)
-    {
-        std::cout << "\n----------------";
-        std::cout << "\nBirthyear: " << (personptr + 1)->birthyear;
-        std::cout << "\nName: " << (personptr + 1)->name;
-        std::cout << "\nPerson [" << i + 1 << "]";
     }
     
     delete []personptr;
