@@ -30,7 +30,7 @@ json read_json_file(const std::string& file_address);
 void write_json_file(json &updated_json, const std::string &file_address);
 void add_new_customer(json &file_reader, std::map<int, Customer> &customers);
 void main_menu();
-void list_all_products(json &file_reader, std::map<int, Customer> &products);
+void list_all_products(json &file_reader, std::map<int, Product> &products);
 void list_all_customers(json &file_reader, std::map<int, Customer> &customers);
 void list_all_orders(json &file_reader, std::map<int, Customer> &orders);
 
@@ -39,24 +39,80 @@ int main()
     std::map<int, Customer> customers;
     std::vector <Product> orders;
     std::map<int, Product> products;
+    bool menu{true};
+    int menu_input{};
+    int customer_menu{};
+
     //read_json_file("products.json");
     //read_json_file("customers.json");
     
     //json read_from_orders = read_json_file("orders.json");
-    //json read_from_products = read_json_file("products.json");
+    json read_from_products = read_json_file("products.json");
     json read_from_customers = read_json_file("customers.json");
-    
-    // Lists the initial customer DB
-    list_all_customers(read_from_customers, customers);
-    add_new_customer(read_from_customers, customers);
-
-    // Json object for updating customer objects. 
     json updated_customer = read_from_customers;
+    json updated_product = read_from_products;
+    while(menu == true)
+    {
+        std::cout << "\n\n---MAIN MENU---"
+                  << "\n1) Customer menu and options" 
+                  << "\n2) Product menu and options"
+                  << "\n3) Order menu and options"
+                  << "\n4) EXIT\n"; 
+        std::cin >> menu_input;
+        std::cin.ignore();
+        switch(menu_input)
+        {
+            case 1:
+            std::cout << "\n\n---CUSTOMER MENU---"
+                      << "\n1) List all current customers"
+                      << "\n2) Add new customers"
+                      << "\n3) Edit current customers"
+                      << "\n4) Back to main menu\n"; 
+                std::cin >> customer_menu;
+                std::cin.ignore();
+                switch(customer_menu)
+                { 
 
-    customer_to_json(updated_customer, customers);
-    list_all_customers(updated_customer, customers);
+                    case 1:
+                        list_all_customers(updated_customer, customers);
+                    break;
+                    case 2:
+                        add_new_customer(read_from_customers, customers);
+                    break;
+                    case 3:
+                        
+                    break;
+                    case 4:
+                        customer_to_json(updated_customer, customers);
+                    break;
+                }
 
-    write_json_file(updated_customer, "customers.json");
+            break;
+
+            case 2:
+                std::cout << "\n\n---PRODUCT MENU---"
+                          << "\n1) List all current products"
+                          << "\n2) Add new products"
+                          << "\n3) Edit current products"
+                          << "\n4) Back to main menu\n";
+                    list_all_products(updated_product, products);
+            break;
+
+            case 3:
+            break;
+
+            case 4:
+                write_json_file(updated_customer, "customers.json");
+                std::cout << "\nBye!";
+                menu = false;
+            break;
+
+            default:
+                std::cout << "\nType 1-5 please.";
+            break;
+        }
+    }
+
 }
 
 void add_new_customer(json &file_reader, std::map<int, Customer> &customers)
@@ -120,8 +176,37 @@ void write_json_file(json &updated_json, const std::string &file_address)
         std::cerr << "Error writing to: " + file_address << "\n";
     }
 }
+
 void list_all_products(json &file_reader, std::map<int, Product> &products)
 {
+    {
+    // Iterate every row paired with key. items() gives acces to the pair.
+    for (const auto& [key, row] : file_reader.items())  
+    {
+        // Converts the string "key" to customer_id <int>
+        int product_id = std::stoi(key); 
+
+        products[product_id] = 
+        { 
+            row.contains("name") ? row["name"].get<std::string>() : " ",
+            row.contains("description") ? row["description"].get<std::string>() : " ",
+            row.contains("price") ? row["price"].get<double>() : 0.0,
+            row.contains("quantity") ? row["quantity"].get<int>() : 0
+        };
+    }
+    
+    // List all products in products.json
+    std::cout << "\n----------PRODUCT LIST----------";
+    for (const auto& [id, product] : products)
+    {
+        std::cout << "\nID: " << id << std::setw(10)
+                  << "\nName: " << product.name
+                  << "\nDescription: " << product.description
+                  << "\nPrice: " << product.price
+                  << "\nQuantity: " << product.quantity;
+        std::cout << "\n----------------------------------";
+    }
+}
 
 }
 
