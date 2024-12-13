@@ -1,7 +1,6 @@
 #include <iostream>
 #include <thread>
 
-
 void bomb()
 {
     for (size_t i = 5; 0 < i; i--)
@@ -19,5 +18,5 @@ int main() {
     t1.join();
 
     std::this_thread::sleep_for(std::chrono::seconds(2));
-    std::cout << "\nGAME OVER!!!" << "\n";
+    std::cout << "\nGAME OVER!!!";
 }
