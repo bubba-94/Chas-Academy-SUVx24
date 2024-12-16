@@ -4,7 +4,10 @@
 #include <atomic>
 #include <bits/stdc++.h>
 #include <mutex>
+#include <cstdlib>
 
+clock_t start, end;
+void print_clock(clock_t start, clock_t end);
 std::atomic<bool> running (true);
 
 void status(){
@@ -12,7 +15,7 @@ void status(){
 
     while(running == true){
 
-        std::cout << "\nFrom status(): ";
+        std::cout << "\nFrom status(): "; 
         if(onoff == true){
             std::cout << "OFF";
             onoff = false;
@@ -25,42 +28,46 @@ void status(){
     }
 }
 
-float random_number_to_f(){   
+void random_number_to_f(){   
+    std::this_thread::sleep_for(std::chrono::milliseconds(50));
     srand(time(NULL));
     float converted_number{};
     float random_number{};
     
     while (running == true){
-        random_number = rand() % 16 + 5;
+
+        // Random between 0 -> 11: (0 + 5 -> 11 + 5) = 5-16 
+        random_number = rand() % 11 + 5;
         std::cout << "\nFrom random_number_to_f(): ";
         // C to F
         converted_number = (random_number * (9.0/5.0)) + 32;
-        std::cout << "(" << random_number << ") converted to F': " << converted_number;
+        std::cout << "[" << random_number << "] converted to F': " << converted_number;
         std::this_thread::sleep_for(std::chrono::seconds(10));
     }
-    return random_number;
 }
 
 void print_word(){
-while (running == true){
-    
-    std::string word = "Concurrency";
-    std::string generatedword;
+    std::this_thread::sleep_for(std::chrono::milliseconds(100));
+    while (running == true){
 
-        for (int i = 0; i < word.length(); i++)
-        {
-            std::cout << "\nFrom print_word(): ";
-            std::cout << generatedword;
-            std::cout << word[i];
-            generatedword += word[i];
-            std::this_thread::sleep_for(std::chrono::seconds(6));
+        std::string word = "Concurrency";
+        std::string regenerated_word{};
+
+            for (int i = 0; i < word.length(); i++)
+            {
+                std::cout << "\nFrom print_word(): ";
+                std::cout << regenerated_word;
+                std::cout << word[i];
+                regenerated_word += word[i];
+                std::this_thread::sleep_for(std::chrono::seconds(6));
+            }
         }
     }
-}
 
 int main(){
-    srand(time(NULL));
     
+    start = clock(); // Starts timer
+
     std::thread t1(status);
     std::thread t2(random_number_to_f);
     std::thread t3(print_word);
@@ -68,10 +75,20 @@ int main(){
     std::this_thread::sleep_for(std::chrono::seconds(60));
     running = false;
 
-    t1.join();
+    t1.join(); 
     t2.join();
     t3.join();
 
-    std::cout << "\nProgram ended";
+    end = clock(); // End timer
 
+    print_clock(start, end); // Prints duration of program = 66 sec?!
+
+}
+
+void print_clock(clock_t start, clock_t end){
+    double time = double (end - start) / double (CLOCKS_PER_SEC);
+    std::cout << "\n------------------------------------------";
+    std::cout << "\nTime elapsed = " << time * 1000 << " milliseconds.";
+    std::cout << "\nTime elapsed = " << time << " seconds.";
+    std::cout << "\n------------------------------------------";
 }
