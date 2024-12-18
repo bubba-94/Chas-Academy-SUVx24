@@ -13,7 +13,7 @@ private:
     public:
     Person(std::string name, int year);
     ~Person();
-    void listAllPersons();
+    void list_all_persons();
 };
 
 #endif

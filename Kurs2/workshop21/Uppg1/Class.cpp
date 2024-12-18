@@ -2,15 +2,15 @@
 
 Person::Person (std::string name, int birthyear) : name(name), birthyear(birthyear)
 {
-    std::cout << name << "created\n";
+    std::cout << "\n" << name << " created";
 }
 
 Person::~Person()
 {
-    std::cout << name << "object destroyed\n";
+    std::cout << "\n" << name << " object destroyed";
 } 
 
-void Person::listAllPersons()
+void Person::list_all_persons()
 {
     std::cout << "\nName: " << name << "\nBirthyear: " << birthyear; 
 }
