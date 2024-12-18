@@ -9,12 +9,13 @@
 clock_t start, end;
 void print_clock(clock_t start, clock_t end);
 std::atomic<bool> running (true);
+std::mutex thread_mutex;
+std::lock_guard<std::mutex> temp_lock(thread_mutex);
 
 void status(){
     bool onoff{};
-
     while(running == true){
-
+        temp_lock;
         std::cout << "\nFrom status(): "; 
         if(onoff == true){
             std::cout << "OFF";
@@ -29,13 +30,12 @@ void status(){
 }
 
 void random_number_to_f(){   
-    std::this_thread::sleep_for(std::chrono::milliseconds(50));
     srand(time(NULL));
     float converted_number{};
     float random_number{};
     
     while (running == true){
-
+        temp_lock;
         // Random between 0 -> 11: (0 + 5 -> 11 + 5) = 5-16 
         random_number = rand() % 11 + 5;
         std::cout << "\nFrom random_number_to_f(): ";
@@ -47,9 +47,8 @@ void random_number_to_f(){
 }
 
 void print_word(){
-    std::this_thread::sleep_for(std::chrono::milliseconds(100));
     while (running == true){
-
+        temp_lock;
         std::string word = "Concurrency";
         std::string regenerated_word{};
 
