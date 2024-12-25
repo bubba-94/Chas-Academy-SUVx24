@@ -1,4 +1,4 @@
-#include "ChasSUVx24/json/single_include/nlohmann/json.hpp"
+#include "nlohmann/json.hpp"
 #include <iostream>
 #include <fstream>
 #include <string>
