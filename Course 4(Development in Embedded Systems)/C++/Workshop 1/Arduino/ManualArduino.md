@@ -40,6 +40,18 @@ If you are familiar with coding you can probably figure out what is happening bu
  * delay() will prolong all other code for a certain amount of milliseconds
  * digitalWrite(pinSlot, HIGH/LOW) will instruct the board to write a HIGH or LOW state to that certain PIN.
  * In this case HIGH/LOW will indicate if that pin/LED is on or off.
+_____________
+<p align="center">
+<img src="https://github.com/bubba-94/Chas-Academy-SUVx24/blob/main/Course%204(Development%20in%20Embedded%20Systems)/C%2B%2B/Workshop%201/images/arduinoIDE.png"/></p>  
+
+## Instructions for uploading code to controller:   
+   1. Start Arduino IDE (if not installed, [click here](https://github.com/bubba-94/Chas-Academy-SUVx24/edit/main/Course%204(Development%20in%20Embedded%20Systems)/C%2B%2B/Workshop%201/Arduino/ManualArduino.md#setting-up-arduino-ide).
+   2. Install any neccesary driver to match the one you have.
+   3. Select a board connected to a certain I/O pin on your computer.    
+   4. Implement the code that you built on TinkerCAD or other platform.    
+   5. Save sketch to a local file(upload to repo if needed).
+   6. Verify/compile code after changes have been made.
+   7. Upload code to connect microcontroller.
 ____________
    
 ### TinkerCAD:
