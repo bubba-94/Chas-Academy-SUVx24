@@ -29,4 +29,4 @@ utvecklingsmiljön och få det att fungera med Arduino-kortet?
 * ### Different platforms:
   * **Arduino IDE:**  
     If the project is fairly small and easy (and you only need access to Arduinos own librarires), then the Arduino IDE will work just fine.
-    * [Link for installing Arduino IDE.](https://support.arduino.cc/hc/en-us/articles/360019833020-Download-and-install-Arduino-IDE)
+    * [Guide for installing and using Arduino](https://github.com/bubba-94/Chas-Academy-SUVx24/blob/main/Course%204(Development%20in%20Embedded%20Systems)/C%2B%2B/Workshop%201/Arduino/ManualArduino.md)
