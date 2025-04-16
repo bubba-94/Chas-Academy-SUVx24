@@ -1,18 +1,36 @@
 #include <Arduino.h>
+#include <Keypad.h>
 
-// put function declarations here:
-int myFunction(int, int);
+int LED = 12;
 
-void setup() {
-  // put your setup code here, to run once:
-  int result = myFunction(2, 3);
+const byte ROWS = 4; 
+const byte COLS = 4; 
+
+char hexaKeys[ROWS][COLS] = {
+    {'1', '2', '3', 'A'},
+    {'4', '5', '6', 'B'},
+    {'7', '8', '9', 'C'},
+    {'*', '0', '#', 'D'}
+  };
+
+byte rowPins[ROWS] = {9, 8, 7, 6}; 
+byte colPins[COLS] = {5, 4, 3, 2}; 
+
+Keypad keypad = Keypad(makeKeymap(hexaKeys), rowPins, colPins, ROWS, COLS); 
+
+void setup()
+{
+  pinMode(LED, OUTPUT);
+  Serial.begin(9600);
 }
 
-void loop() {
-  // put your main code here, to run repeatedly:
-}
-
-// put function definitions here:
-int myFunction(int x, int y) {
-  return x + y;
+void loop()
+{
+  digitalWrite(LED, HIGH);
+  if (keypad.getKey())
+  {
+    Serial.println("Keypad click succesful");
+    digitalWrite(LED, LOW);
+    delay(300);
+  }
 }
