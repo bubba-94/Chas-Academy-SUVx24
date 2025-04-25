@@ -1,5 +1,4 @@
 # Timers 
-
     * The term timer is used alot in the data sience world. 
     What are some contexts and definitions these studies revolve around?
         * Can you give me some examples of different timers you have stumpled upon:    
@@ -11,7 +10,7 @@
 
 ## Derived conepts
 
-    * What are the differences (if any) between:
+    * What are the differences (if any) between
         * System timer:
         * Benchmark timer:
         * Event timer:
@@ -20,7 +19,9 @@
 ## Implementations
 
     * What is a 555 timer, integrated circuit?
+        Also called a precision timer, 
         * How does it work? 
     * What entails the library "FspTimer.h"?
+        Is a library for different FspTimer components implemented in one library
         * What kind of components depends on this library?
         * On what platforms is this components compatible/available?
