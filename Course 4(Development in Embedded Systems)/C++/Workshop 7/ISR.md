@@ -12,7 +12,7 @@ An ISR should be as efficient and short as possible so the CPU can continue it's
 
 * ### When does an ISR occur?
     As cited above, an ISR is a quicker and more efficient way of "handling" a different task rather than polling and 
-    waiting in a busy state. [This]() is a visual summary of what happens.
+    waiting in a busy state. [This](https://github.com/bubba-94/Chas-Academy-SUVx24/blob/main/Course%204(Development%20in%20Embedded%20Systems)/C%2B%2B/Workshop%207/ISR.JPG) is a visual summary of what happens.
 
     * ### Under what situations can an ISR be activated?
         * Software interrupts: Triggered by the program using specific instructions (e.g., system calls). 
