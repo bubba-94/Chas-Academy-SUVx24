@@ -88,11 +88,10 @@
      Timer modes commonly supported include GPT and AGT. RTC is used for real-time tracking, while POEG and CGC are peripheral interfaces, not standalone timers
       * Which two are considered the most common ones?
         GPT and AGT
-
-
-
-
-
-# Sinus waves
+        
 ### Pulse with modulation
+   A frequency or measured signal that determines the pace of a switch from HIGH to LOW
 ### Duty cycles
+   Is the measured signal/time that is controlled by the PWM signal.  
+   Example:  50 % duty cycle, ON 50% and OFF 50%
+   75% duty cycle, ON 75 % and OFF 25%
