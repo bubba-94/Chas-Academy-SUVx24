@@ -1,14 +1,13 @@
-# Realtidsoperativsystem
-### Fundera över frågorna nedan när ni begrundar instuderingsmaterialet.
-* Vad innebär det om en schemaläggare är preemptive eller non-preemptive?
-    * Vad betyder cooperative i sammanhanget?
-    * Vad är minst en detalj i mjukvaran i ett realtidssytem som vi måste tänka på om schemaläggaren är non-preemptive?
+# Real-time operating systems (RTOS)
+* What does it mean if a scheduler is preemptive or non-preemptive?  
+    * What does cooperative mean in this subject?  
+    * What is (atleast one) part of the software inside a RTOS that we have to reconsider if a sheduler is non-preemptive?
 ### FreeRTOS
-    * Vad tillför FreeRTOS till mjukvaran i våra inbyggda system?
-    * Är FreeRTOS:s schemaläggare preemptive eller non-preemptive?
-        * Ja? Nej? It’s complicated?
-    * Vad är en task och en co-routine?
-        * Vad särskiljer dem åt?
-        * Vad innebär priority för en task eller en co-routine?
-    * Är det skillnad på Arduino:s delay() och FreeRTOS:s vTaskDelay()?
-    * Hur kan vi konfigurera FreeRTOS för våra inbyggda system?
+* What does FreeRTOS produce for the software inside our embedded systems?  
+* Is the FreeRTOS schedluer preemptive or non-preemptive?  
+   * Yes? No? It’s complicated?  
+* What is a task and a co-routine?  
+   * What separates them?
+   * What does priority mean for a task or a co-routine?  
+* Is there a difference on the Arduino delay() and FreeRTOS vTaskDelay()?
+* How can we configure FreeRTOS for our embedded systems?  
