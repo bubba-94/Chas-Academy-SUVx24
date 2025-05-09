@@ -38,3 +38,39 @@
 * How can we configure FreeRTOS for our embedded systems?   
    Via FreeRTOSConfig.h, a configuration header file.
    A library where you can enable/disable features like mutexes, co-routines, software timers, etc.
+
+
+
+
+### Exercise 1.a Worskhop 12
+
+* What does dokumentation say about TaskHandle_t?
+   That TaskHandle_t is the object ref to which different tasks are used to reference.  
+   Deliver as a parameter to either xTaskCreate or vTaskDelete to use those certain functions.
+* What does pre-processing macros ARDUINO_PORTENTA_C## do?
+   They define another piece of code / LED if the RGB LED on that certain board is available.
+
+* Increase the argument for vTaskDelay(): 
+   * configTICK_RATE_HZ / 4 => configTICK_RATE_HZ * 4  
+   What happens? It increases the tick rate of the ROTS tick frequency and prolongs the tasks in the system.
+
+* Change the uxPriority parameter för blinky_task to 2: 
+   * Is this a higher or lower priority?  
+      A higher priority
+   * What differences can you spot in the program? Explain what you see:  
+      It does not seem to do any differences in the program.  
+      I slowed the frequency down a little bit to maybe easier spot some differences but none can be found.
+
+### Exercise 1.c Workshop 12
+
+#### Hypotheses
+
+* Nothing will run since there is no priority and no instruction to pass the torch along.
+
+#### Explanation
+
+configUSE_TIME_SLICING: That the scheduler will run the highest priority task but not switch between tasks that has the same priority.  
+Since all tasks have the same priority no task will be run
+
+when configUSE_TIME_SLICING is defined to 1 it will **ALWAYS** run the highest prioritized task.
+

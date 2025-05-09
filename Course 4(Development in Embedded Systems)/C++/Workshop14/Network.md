@@ -80,9 +80,23 @@
 
 ### Exercise 3
 [Link](https://www.lifewire.com/what-is-a-private-ip-address-2625970)
-* How are private addreses divided?    
-* Why are private addresses needed?     
+* How are private addreses divided?  
+    **Class A:** 10.0.0.0 – 10.255.255.255 (16 million+ addresses)
+    **Class B:** 172.16.0.0 – 172.31.255.255
+    **Class C:** 192.168.0.0 – 192.168.255.255
+
+* Why are private addresses needed? 
+    Private addresses allow devices to communicate within a local network without using up the limited number of public IP addresses.
+
 * What does DHCP do?  
+    Automatically assigns IP addresses and other network configuration.
+
 * What are some reserved ip addresses?    
+    169.254.x.x, APIPA (Automatic Private IP Addressing, used when DHCP fails)
+    127.0.0.1,Loopback address (refers to your own device)
+    
 * How do find your own computers IP address?  
+    Windows: Open Command Prompt and type ipconfig.
+    macOS/Linux: Open Terminal and type ifconfig or ip a.
 * What does an ISP do?    
+    An ISP (Internet Service Provider) gives you access to the internet.
