@@ -1,6 +1,7 @@
 ## Windows commands
 Explain following:   
-***Hostname:*** is the "name" of my computer.
+***hostname:***  
+Displays the "name" of my computer.
 
 ***netstat***
 * What happens if you type netstat in the terminal:   
