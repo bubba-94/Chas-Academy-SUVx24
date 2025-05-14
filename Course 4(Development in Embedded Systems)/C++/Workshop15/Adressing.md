@@ -21,9 +21,9 @@ Study followin informative video about network protocols, use the link below to 
 and other parameters to devices connected to a certain network. Working in the Application layer.  
 ***IP:*** (Internet Protocol) is the network layer communications protocol in the IP. Its task is to deliver packets from one source to another.
 Working in the Network layer.  
-***TCP:*** (Transmission Control Protocol, stateful) is a data transfer layer protocol that uses IP to tranfer data packets that is relatively reliable.
+***TCP:*** (Transmission Control Protocol, stateful) is a data transfer layer protocol that uses IP to tranfer data packets (in two ways).
 This protocol is usually not used for say video games because it has a bigger chance of causing minor delays. Working in the Transport layer.  
-***UDP:*** (User Datagram Protocol, stateless) is a faster but less reliable protocol than TCP. Working in the Transport layer.  
+***UDP:*** (User Datagram Protocol, stateless) is a faster but less reliable (kind of a one way stream) protocol than TCP. Working in the Transport layer.  
 ***DNS:*** (Domain Name Server) relates a certain webb address to a certain IP address. Used for easier addressing. Working in the Application layer.  
 ***SMB:*** (Server Message Block) is a communication protocol that is used for shared access to files, directories, printers and other resources on a certain network. Working in the Application layer.  
 ***SMTP:*** (Simple Mail Transfer Protocol) is the most common protocol for transferring electronic mail. Working on Application layer.   
