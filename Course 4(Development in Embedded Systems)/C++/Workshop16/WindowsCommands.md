@@ -1,7 +1,7 @@
-## Windows commands
-Explain following:   
-***hostname:***  
-Displays the "name" of my computer.
+# Windows commands
+
+* ***hostname:***  
+  Displays the "name" of my computer.
 
 ***netstat***
 * What happens if you type netstat in the terminal:   
