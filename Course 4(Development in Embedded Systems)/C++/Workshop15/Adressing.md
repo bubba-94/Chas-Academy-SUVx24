@@ -17,7 +17,7 @@ Study followin informative video about network protocols, use the link below to 
 
 ### Important protocols
 
-***DHCP:*** (Dynamic Host Communication Protocol) is a network management protocol used for assigning IP addresse automatically 
+***DHCP:*** (Dynamic Host Configuration Protocol) is a network management protocol used for assigning IP addresse automatically 
 and other parameters to devices connected to a certain network. Working in the Application layer.  
 ***IP:*** (Internet Protocol) is the network layer communications protocol in the IP. Its task is to deliver packets from one source to another.
 Working in the Network layer.  
