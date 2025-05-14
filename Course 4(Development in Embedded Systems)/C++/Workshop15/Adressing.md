@@ -27,7 +27,7 @@ This protocol is usually not used for say video games because it has a bigger ch
 ***DNS:*** (Domain Name Server) relates a certain webb address to a certain IP address. Used for easier addressing. Working in the Application layer.  
 ***SMB:*** (Server Message Block) is a communication protocol that is used for shared access to files, directories, printers and other resources on a certain network. Working in the Application layer.  
 ***SMTP:*** (Simple Mail Transfer Protocol) is the most common protocol for transferring electronic mail. Working on Application layer.   
-***SSH:*** (Secure Shell) is a protocol making sure that a connection to another computer over the global or local network is secure. Working in the Application layer.    
+***SSH:*** (Secure Shell) is a protocol making sure that a connection to another computer over the global or local network is secure/encrypted. Working in the Application layer.    
 ***HTTP:*** (Hypertext Transfer Protocol) is the protocol tranferring websites on the WWW(World Wide Web). Working in the Application layer.  
 
 What is ***net spoofing***: Net spoofing is a procedure in which a person or program succesfuly identifies as another by falsifying data, to usually gain unauthorized access.  
