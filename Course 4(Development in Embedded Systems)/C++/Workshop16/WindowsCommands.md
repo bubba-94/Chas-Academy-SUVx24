@@ -3,13 +3,14 @@
 * ***hostname:***  
   Displays the "name" of my computer.
 
-***netstat***
-* What happens if you type netstat in the terminal:   
+* ***netstat***
+  * What happens if you type netstat in the terminal:   
     After a couple of seconds it shows different information about ceratin connections.  
-        * What is shown ?    
-        Information about currently active connections and its structure/model.  
+          * What is shown ?    
+          Information about currently active connections and its structure/model.  
 
-Examine the following and explain in simpler terms : 
+### Examine the following and explain in simpler terms : 
+
 * ***ipconfig***  
     The current network cards installed in my computer.
     * What extensions can you use?  
