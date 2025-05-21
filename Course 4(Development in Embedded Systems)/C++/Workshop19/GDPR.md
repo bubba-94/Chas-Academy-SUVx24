@@ -2,8 +2,6 @@
 
 Workshop that will discuss the subject and importance of following the guidelines provided from the GDPR
 
-## Part 1
-
 1. What does GDPR stand for ?  
   **General Data Protection Regulation**
 2. What is the purpose of GDPR?  
