@@ -33,3 +33,6 @@
 
 # git tracking
 *.git
+
+#
+*.arduino_secrets.h
