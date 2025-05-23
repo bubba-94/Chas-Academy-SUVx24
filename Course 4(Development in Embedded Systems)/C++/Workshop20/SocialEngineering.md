@@ -21,9 +21,10 @@
 # Cyber Defence 
 
 8. What does **PICERL** stand for, and how is the model used in cybersecurity incidents?  
-    PICERL is a model for handling and maybe preventing incidents before they occur.  
+    **PICERL** is a model for handling and maybe preventing incidents before they occur.  
     This model provides a six step approach to certain critical safety concerns inside an organization.  
-    |**PICERL**|**Brief description**| 
+    |**PICERL**|**Brief description**|
+    |----------|---------------------|
     |**Preparation**| Establish policies, tools and training before and incident occurs | 
     |**Identification**| Detect and confirm the occurence of an incident |
     |**Containment**| Limit the spread and impact of an incident |
