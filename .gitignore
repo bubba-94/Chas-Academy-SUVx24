@@ -34,5 +34,5 @@
 # git tracking
 *.git
 
-#
-*.arduino_secrets.h
+# ignore sensitive information
+**/arduino_secrets.h
