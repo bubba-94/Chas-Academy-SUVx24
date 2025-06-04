@@ -6,7 +6,7 @@
 
 * **Hashing**: scrambles data into fixed size and irreversible 256 bit output.
 
-* **SHA-256**: is a fast and secure hashing function that generates a set "ID/fingerprint" or a string of characters to encrypt a certain message.
+* **[SHA-256](https://github.com/bubba-94/Chas-Academy-SUVx24/blob/main/Course%204(Development%20in%20Embedded%20Systems)/C%2B%2B/Workshop22/EEPROM/SHA256.md)**: is a fast and secure hashing function that generates a set "ID/fingerprint" or a string of characters to encrypt a certain message.
 
 * **CRC (Cyclic Redundancy Check)**: is an error detecting code used to check for accidental changes or corruption in stored or transmitted data inside the EEPROM.
 
