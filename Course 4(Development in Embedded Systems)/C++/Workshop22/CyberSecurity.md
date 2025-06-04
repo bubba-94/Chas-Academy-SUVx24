@@ -14,6 +14,6 @@ The integrity of a system can be protected using methods like Hashing and Digita
 * **Availability**: availability means that the resources are available whenever theyre required by the user or the program.  
 Incidents like system failure, natural disasters, and cyberattacks can disrupt the availability of a system.
 
-## [WiFi.md](provide link)
-## [HTTPS.md](provide link)
-## [EEPROM.md](provide link) 
+## [WiFi.md](https://github.com/bubba-94/Chas-Academy-SUVx24/blob/main/Course%204(Development%20in%20Embedded%20Systems)/C%2B%2B/Workshop22/WiFi/WiFi.md)
+## [HTTPS.md](https://github.com/bubba-94/Chas-Academy-SUVx24/blob/main/Course%204(Development%20in%20Embedded%20Systems)/C%2B%2B/Workshop22/HTTPS/HTTPS.md)
+## [EEPROM.md](https://github.com/bubba-94/Chas-Academy-SUVx24/blob/main/Course%204(Development%20in%20Embedded%20Systems)/C%2B%2B/Workshop22/EEPROM/EEPROM.md) 
