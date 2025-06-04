@@ -21,20 +21,20 @@
 * Secure devices: Includes identifying trusted devices connecting to any network and sets any policies in other integrated security tools.
 * Integrate with IDPS and other tools: Catch and block suspicious activities and security breaches in the network.
 
-What does SSID stand for:  
+#### What does SSID stand for 
 
 * **SSID (Service Set Identifier)** is the ID for your local network.
 
-What is Wi-Fi Protected Access III (WPA3) and what improvements does it provide compared to previous versions like WPA2:  
+#### What is Wi-Fi Protected Access III (WPA3) and what improvements does it provide compared to previous versions like WPA2  
 
 * WPA3 has a different and more secure encryption tool called a PFS that ensures that a compromised private key cannot be used to decrypt recvent communications.  
 
-What are WiFi encryption tools:  
+#### What are WiFi encryption tools  
 
 * they help defend you device and data when you are using WiFi networks.  
 By encrypting data that can later be deciphered by a compatible device and thereby verify communication.
 
-What are five effective ways to ensure ett safe WiFi network according to [this article](https://www.esecurityplanet.com/trends/the-best-security-for-wireless-networks/):  
+#### What are five effective ways to ensure ett safe WiFi network according to [this article](https://www.esecurityplanet.com/trends/the-best-security-for-wireless-networks/)  
 
 * Use encryption methods: scaramble network data to complicate the access for sensitive information with the use of security protocols such as WPA2 or WPA3.
 * Activate the Router Firewall: for furhter protection against malware, viruses and hackers.
@@ -42,6 +42,6 @@ What are five effective ways to ensure ett safe WiFi network according to [this 
 * Utilize VPNs: encrypts your webtraffic and reroutes it through a secure and encrypted "tunnel".
 * Deploy a Wireless Security Software: improves Wi-Fi network security by incorporating capabilities such as performance analysis, network scanning, site surveys, spectrum analysis, heat mapping, audits, traffic analysis, packet sniffing, penetration testing, monitoring, and management.
 
-What is an "Evil Twin" attack and how do protect yourself against it:  
+#### What is an "Evil Twin" attack and how do protect yourself against it
 
 * An Evil Twin attack is a type of Wi-Fi hacking where an attacker sets up a fake Wi-Fi access point that looks identical to a legitimate one (same name, similar settings) to trick users into connecting.
