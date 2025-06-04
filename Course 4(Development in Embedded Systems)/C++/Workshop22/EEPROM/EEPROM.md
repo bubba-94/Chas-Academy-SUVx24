@@ -10,7 +10,7 @@
 
 * **CRC (Cyclic Redundancy Check)**: is an error detecting code used to check for accidental changes or corruption in stored or transmitted data inside the EEPROM.
 
-### General questions (generated from ChatGPT)
+### General questions
 
 #### What does EEPROM stand for and what is its primary function in electronics
 
