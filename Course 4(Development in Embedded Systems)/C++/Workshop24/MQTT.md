@@ -8,10 +8,10 @@ A protocol used in the IoT industry for short and easy communication to and from
 
 ### Sources i have worked with
 
-[Guide to MQTT (Basic, SWE)](https://www.induo.com/b/mqtt-protokollet-for-iot/#:~:text=MQTT%20och%20meddelanden%20%C3%84mnena%20representeras%20med%20str%C3%A4ngar,%C3%A4r%20av%20intresse%20f%C3%B6r%20de%20prenumererade%20enheterna.)
-[What is MQTT (Video)](https://www.youtube.com/watch?v=bzuSCFaBjds)
-[MQTT Basics (Video)](https://www.youtube.com/watch?v=z4r4hIZcp40)
-[Mastering MQTT (In-depth, ENG)](https://www.emqx.com/en/blog/the-easiest-guide-to-getting-started-with-mqtt)
+[Guide to MQTT (Basic, SWE)](https://www.induo.com/b/mqtt-protokollet-for-iot/#:~:text=MQTT%20och%20meddelanden%20%C3%84mnena%20representeras%20med%20str%C3%A4ngar,%C3%A4r%20av%20intresse%20f%C3%B6r%20de%20prenumererade%20enheterna.)  
+[What is MQTT (Video)](https://www.youtube.com/watch?v=bzuSCFaBjds)  
+[MQTT Basics (Video)](https://www.youtube.com/watch?v=z4r4hIZcp40)  
+[Mastering MQTT (In-depth, ENG)](https://www.emqx.com/en/blog/the-easiest-guide-to-getting-started-with-mqtt)  
 
 ### Assignment
 
