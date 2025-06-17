@@ -48,17 +48,17 @@ This is to ensure access to the latest relevant information.
 
 #### What is the difference between MQTT and HTTP for IoT communications
 
-They are both data transfer protocols but they serve a different kind of purpose and have different characteristics. 
+They are both data transfer protocols but they serve a different kind of purpose and have different characteristics.
 
-| **Feature**                        | **MQTT**                                                         | **HTTP**         |  
-| -----------------------------------|------------------------------------------------------------------|------------------|
-| **Message style**                  | Publish/Subscribe                                                | Request/Response |
-| **Data exchange**                  | Binary, minimal overhead                                         | Text-based, larger headers |
-| **Connection**                     | Persistent, reduces overhead                                     | Short-lived, connection for each response |
-| **Use cases**                      | IoT, real-time updates, sensor networks                          | Web pages, API, file transfers |
-| **Latency**                        | Low, suitable for time sensitive communication                   | Higher, better suited for standard requests/responses |
-| **Scalability**                    | Highly scalable for numerous devices and subscribers             | Scalable, depending on concurrent requests/responses |
-| **Resource usage**                 | Minimal, designed for devices with limited resources             | Higher due to overhead with requests and responses |
+| **Feature**                        | **MQTT**                                                         | **HTTP**                                                    |  
+| -----------------------------------|------------------------------------------------------------------|-------------------------------------------------------------|
+| **Message style**                  | Publish/Subscribe                                                | Request/Response                                            |
+| **Data exchange**                  | Binary, minimal overhead                                         | Text-based, larger headers                                  |
+| **Connection**                     | Persistent, reduces overhead                                     | Short-lived, connection for each response                   |
+| **Use cases**                      | IoT, real-time updates, sensor networks                          | Web pages, API, file transfers                              |
+| **Latency**                        | Low, suitable for time sensitive communication                   | Higher, better suited for standard requests/responses       |
+| **Scalability**                    | Highly scalable for numerous devices and subscribers             | Scalable, depending on concurrent requests/responses        |
+| **Resource usage**                 | Minimal, designed for devices with limited resources             | Higher due to overhead with requests and responses          |
 | **Choice of protocol if you need** | Low latency, real-time communication and efficient data exchange | General-purpose protocol, large payloads, greater resources |
 
 * **HTTP**: is a general-purpose protocol used for web-browsing and file transfers handling greater flexibility and larger payloads.
