@@ -1,9 +1,11 @@
-# Embedded Systems – Full Course Practice Test
+# Embedded Systems
+
+Mocked test from chatgpt to summarize our last course in year 1 before oursummer break.
 
 **Test Type:** Mixed (Theoretical + Practical)  
-**Total Questions:** 20  
+**Total Questions:** 19  
 **Coverage:** RTOS, Protocols, Security, Testing, AI tools, Documentation, Hardware interaction, and more.  
-**Test Date:** Thursday  
+**Test Date:** Thursday 18/6
 **Good Luck!**
 
 ---
@@ -13,8 +15,10 @@
 ### 1. Real-Time Operating Systems (RTOS)
 
 * a) What is a Real-Time Operating System (RTOS)?  
-* b) Why is an RTOS preferred in embedded systems over a general-purpose OS?
+    Is a system that relies on time critical executions.
 
+* b) Why is an RTOS preferred in embedded systems over a general-purpose OS?
+    Because an embedded system designed to work and execute 
 ---
 
 ### 2. RTOS Task Management
@@ -119,11 +123,15 @@ Mention one benefit and one ethical consideration.
 Write a pseudo-code or C snippet showing two FreeRTOS tasks with different priorities.  
 Explain what happens when both are ready to run.
 
+[Link to program]()
+
 ---
 
 ### 17. UART Communication
 
 Write a pseudo-code function to send the string “Hello” over UART and wait for a response.
+
+[Link to program]()
 
 ---
 
@@ -134,10 +142,14 @@ Describe a simple state machine for:
 * Polling an I2C sensor every second  
 * Blinking an LED if the value exceeds a threshold
 
+[Link to program]()
+
 ### 19. Debugging Scenario (SPI)
 
 You’ve built a system with SPI sensors, but values returned are always 0.  
 List 3 possible causes and how you'd debug them.
+
+[Link to program]()
 
 ---
 
