@@ -9,7 +9,7 @@ I am going to setup environments in my configuration file so that i can gather d
 
 * Steps:
 
- 1. Look up certain environments [here](link)
+ 1. Look up certain environments [here](https://github.com/bubba-94/Chas-Academy-SUVx24/blob/main/Course%204(Development%20in%20Embedded%20Systems)/C%2B%2B/Workshop26/platformio.ini)
  2. Setup the actual hardware
  3. Setup the code that is supposed to be uploaded
  4. Determine which environment to upload (found inside the .ini file)
