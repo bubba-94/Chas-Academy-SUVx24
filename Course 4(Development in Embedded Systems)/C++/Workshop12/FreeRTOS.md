@@ -1,4 +1,7 @@
 # Real-time operating systems (RTOS)
+
+[Sources](https://www.freertos.org/Documentation/02-Kernel/02-Kernel-features/00-Developer-docs)
+
 * What does it mean if a scheduler is preemptive or non-preemptive?    
    **Preemptive:** the scheduler can interrupt a running task to switch to a higher-priority one automatically.  
    **Non-preemptive:** Tasks must yield control back to the scheduler voluntarily, the RTOS will not interrupt running tasks on its own.  
