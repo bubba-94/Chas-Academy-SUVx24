@@ -46,7 +46,7 @@
 
 ## Fördelar med I2C jämfört med UART och SPI
 
-| Protokoll | Ledningar | Fler enheter | Klocka? | Fördelar med I2C |
+| Protokoll | Ledningar | Fler enheter | Klocka? | Fördelar |
 |-----------|-----------|--------------|---------|------------------|
 | **UART**  | 2 (TX, RX) | Nej         | Nej    | Enkelt men endast punkt-till-punkt |
 | **SPI**   | 4 (MISO, MOSI, SCK, SS) | Begränsat (en SS per enhet) | Ja | Snabbt men kräver många ledningar |

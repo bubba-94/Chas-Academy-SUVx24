@@ -6,7 +6,7 @@
 * What is SPI's advances?  
 
   * Speed improvedment over UART / I2C  
-  * Supports full duplex communication 
+  * Supports full duplex communication
 * Is there any disadvantages using SPI?
   * Loosely defined, does not specify frame format, number of bits transmitted or voltage levels.
 * When is SPI often used?
