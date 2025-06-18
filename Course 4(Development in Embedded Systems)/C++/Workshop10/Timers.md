@@ -82,13 +82,13 @@ The 555 timer Can use customized duty cycles
     GPT, AGT, RTC, POEG and CGC.
 
 * What does [Arduino UNO R4 WiFi User Manual #Timers](https://docs.arduino.cc/tutorials/uno-r4-wifi/cheat-sheet/#timers) have to say about:
-  * FspTimer-class: it provides a link to the ArduinoCore-reference on GitHub where you can look up the source code for actual class.   
-  * FspTimer::force_use_of_pwm_reserved_timer(): that the function will request a PWM timer.    
+  * FspTimer-class: it provides a link to the ArduinoCore-reference on GitHub where you can look up the source code for actual class.
+  * FspTimer::force_use_of_pwm_reserved_timer(): that the function will request a PWM timer.
   * The hardware run on UNO R4 WiFi (RA4M1-processor) that is abstracted: that you have to declare the timers type, which is either AGT or GPT  
 * Use sources and source code to describe following FspTimer methods:
   * get_available_timer(timer_type): will return an int8_t that entails which available PWM timer is available.  
-  * begin(mode, timer_type, timer_index, rate, duty_cycle, irq_callback): initializes the timer and what type of timer is being used, either GPT or AGT.    
-  * setup_overflow_irq(): setup an interrupt request when the counter overflows.   
+  * begin(mode, timer_type, timer_index, rate, duty_cycle, irq_callback): initializes the timer and what type of timer is being used, either GPT or AGT.
+  * setup_overflow_irq(): setup an interrupt request when the counter overflows.
   * enable_overflow_irq(): enable the interrupt that fires on counter overflow.  
   * open():  initializes and prepares the timer hardware.  
   * start(): begins the timer counting.

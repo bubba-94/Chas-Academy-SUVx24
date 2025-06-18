@@ -1,6 +1,6 @@
 # Real-time systems
 
-### Questions to think about during studying.
+## Questions to think about during studying
 
 * What is an real-time system?
   A real time system is a system that demands a task being executed inside a specific time-frame.
