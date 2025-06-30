@@ -11,7 +11,7 @@
 
 ### Tools
 
-This is 8 of the tools provided in the source that make the process possible. Here is the source that i have used [spacelift.io](https://spacelift.io/blog/ci-cd-tools).
+These are 8 of the tools provided in the source that make the process possible. Here is the source that i have used [spacelift.io](https://spacelift.io/blog/ci-cd-tools).
 
 | **Tools** | **Spacelift** | **Azure DevOps** | **GitHub Actions** | **Jenkins** | **Buddy** | **TeamCity** | **CircleCI** | **AWS CodePipeline** | **TravisCI** | **GitLab CI/CD** |
 |-----------|---------------|------------------|--------------------|-------------|-----------|--------------|--------------|----------------------|--------------|------------------|
@@ -43,7 +43,7 @@ Explaination of the words that will sort of create the "infinity sign" that is u
   * **CD**: automatically deliver/deploy code to production.
 
 * Can you draw or describe a simple CI/CD pipeline?
-  * Explained under [concepts](provide link) above.
+  * Explained under [concepts](https://github.com/bubba-94/Chas-Academy-SUVx24/edit/main/Course%205(Advanced%20System%20Development)/DevOps.md#concepts) above.
 
 * What tools have you heard of for automation?
   * GitHub Actions, Jenkins and GitLab CI are some.
@@ -134,7 +134,7 @@ To ensure a healthy, optimized and functional system.
 
 ### Big 3
 
-* **AWS** (Amazon Web Services )
+* **AWS** (Amazon Web Services)
 * **Azure** (Microsoft)
 * **Google Cloud Platform**
 
@@ -154,26 +154,26 @@ To ensure a healthy, optimized and functional system.
 
 1. What is DevOps and why is it important?
 
-* DevOps is the connection between Development(Dev) and IT Operations (Ops) to shorten the lifecycle of a software project and
+    DevOps is the connection between Development(Dev) and IT Operations (Ops) to shorten the lifecycle of a software project and
 to continuously track and test a system under development.
 
 2. Describe a basic CI/CD pipeline.
 
-* [Link that describes the flow](### Concepts) that provides an infinity sign when put together.
+    [Link that describes the flow](https://github.com/bubba-94/Chas-Academy-SUVx24/edit/main/Course%205(Advanced%20System%20Development)/DevOps.md#concepts) that provides an infinity sign when put together.
 
-3.What are containers and how do the differ from VM's?
+3. What are containers and how do the differ from VM's?
 
-* A container is a more lightweight, isolated package that provides all the dependencies to run a certain application.
-* A Virtual Machine is a full on copy of you computer installed inside your computer.
+    A container is a more lightweight, isolated package that provides all the dependencies to run a certain application.
+    A Virtual Machine is a full on copy of you computer installed inside your computer.
 
 4. What happens when you push code to GitHub with CI enabled?
 
-* When a pull request occurs, tests will be run to make sure that the provided code passes the CI tests.
+    When a pull request occurs, tests will be run to make sure that the provided code passes the CI tests.
 
 5. What are some challenges DevOps solves?
 
-* The time consuming code reviews and communication between Dev and Ops to automate integration and deployment of new code.
+    The time consuming code reviews and communication between Dev and Ops to automate integration and deployment of new code.
 
 6. What do you know about IaC?
 
-* That IaC is a way of breaking down infrastructure into code to more easily handle said services.
+    That IaC is a way of breaking down infrastructure into code to more easily handle said services.
