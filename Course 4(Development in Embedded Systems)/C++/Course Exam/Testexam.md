@@ -168,8 +168,8 @@ Collect data and configure improvements based on certain data.
 ### 16. FreeRTOS Scheduling
 
 Write a pseudo-code or C snippet showing two FreeRTOS tasks with different priorities.  
-Explain what happens when both are ready to run.
-[Link to program Exercise1b.cpp]()
+Explain what happens when both are ready to run.  
+[Link to program Exercise1b.cpp](https://github.com/bubba-94/Chas-Academy-SUVx24/blob/main/Course%204(Development%20in%20Embedded%20Systems)/C%2B%2B/Workshop12/Exercise1b.cpp)  
 The higher priority task will always run if not told otherwise with example vTaskDelay.
 That will let the other task know that there is CPU time available and will eventually run until the delay is done.
 
