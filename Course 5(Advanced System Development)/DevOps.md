@@ -1,5 +1,10 @@
 # DevOps
 
+## Helpful links
+
+[DevSecOps](https://www.youtube.com/watch?v=mZoOnWjv_QM)
+[Deployment Pipleline](https://www.youtube.com/watch?v=pJ9f7w4AxtU)
+
 ## What is DevOps? Principles and Culture
 
   DevOps is the term and process of shortening the life cycle of a development project, with the use of tools and technologies to automate continuous deployments.
