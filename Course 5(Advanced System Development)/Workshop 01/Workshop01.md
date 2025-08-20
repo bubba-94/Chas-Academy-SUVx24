@@ -13,6 +13,8 @@
 
 1. What is cloud computing and which are the three main types of cloud services?
   
+Cloud computing is the delivery of a selection of computing services over the internet, like storage, network, software and more. Cloud computing eliminates the need of physical infrastructure and allows flexibility and scalability.
+
 #### SaaS (Software as a Service)
 
   Is a cloud computing model provided and is ready to use over the internet. The provider hosts the software, security, updates and infrastructure.
