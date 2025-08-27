@@ -13,24 +13,24 @@
 
 ## Cloud Computing
 
-* What is cloud computing in simple terms?
+* What is cloud computing in simple terms?  
     Cloud computing provides as the service of using applications as utilities over the internet.  
     It allows us to create, configure and customize the applications online.
 
-* Can you give examples of popular cloud service providers?
+* Can you give examples of popular cloud service providers?  
     Amazon, Microsoft and Google are 3 of the biggest.
 
-* What’s the difference between IaaS, PaaS, and SaaS?
+* What’s the difference between IaaS, PaaS, and SaaS?  
     The difference between the three are how "much" is delivered to the end user.
 
   * **IaaS** (Infrastructure as a Service): Provides the hardware needed for the infrastructure. **Examples:** AWS EC2, Google Compute Engine
   * **PaaS** (Platform as a Service): Provides a working platform for the end user. **Examples:** Heroku, Google App Engine, AWS Elastic Beanstalk
   * **SaaS** (Software as a Service): Provides a software application for the end user. **Examples:** Google Workspace, Salesforce, Dropbox
 
-* Why might a company choose the cloud instead of on-premise infrastructure?
+* Why might a company choose the cloud instead of on-premise infrastructure?  
     The cost of an on-premise infrastructure are very high and the infrastructure requires alot of space and power to run (which is also demanding).
 
-* What are some common use cases for cloud computing in DevOps?
+* What are some common use cases for cloud computing in DevOps?  
 
   * CI/CD pipelines for automated integration
   * Containerization & orchestration

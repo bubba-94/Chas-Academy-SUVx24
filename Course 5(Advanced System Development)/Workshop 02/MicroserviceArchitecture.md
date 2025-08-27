@@ -46,7 +46,7 @@
 
 * What is SaaS, and how does it relate to microservices?
 
-**SaaS** (Software as a Service) is a software ususally centrally hosted and licensed on a subscription basis. SaaS is often accesible via the browser and is a common architectural pattern in HRM (Human Resource Management), ERP (Enterprise Resource Managament) and CRM (Customer Relationship Management).
+  **SaaS** (Software as a Service) is a software ususally centrally hosted and licensed on a subscription basis. SaaS is often accesible via the browser and is a common architectural pattern in HRM (Human Resource Management), ERP (Enterprise Resource Managament) and CRM (Customer Relationship Management).
 
 * How do microservices help SaaS products scale and update more easily?
 
@@ -62,7 +62,7 @@
 
 * What is IaaS, and how does it provide the foundation for microservice architecture?
 
- **IaaS** (Infrastructure as a Service) provides the neccessary virtualization hardware that is required by the application during runtime.
+  **IaaS** (Infrastructure as a Service) provides the neccessary virtualization hardware that is required by the application during runtime.
 
 * How do IaaS providers (AWS, Azure, GCP) help with scalability, networking, and storage for microservices?
 
