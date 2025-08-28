@@ -20,19 +20,19 @@
 void setup()
 {
 
-  pinMode(LED_BUILTIN, OUTPUT);
+    pinMode(LED_BUILTIN, OUTPUT);
 
-  digitalWrite(LED_BUILTIN, HIGH);
+    digitalWrite(LED_BUILTIN, HIGH);
 }
 
 void loop()
 {
-  // Blinkar varje sekund
-  digitalWrite(LED_BUILTIN, HIGH);
+    // Blinkar varje sekund
+    digitalWrite(LED_BUILTIN, HIGH);
 
-  delay(1000);
+    delay(1000);
 
-  digitalWrite(LED_BUILTIN, LOW);
+    digitalWrite(LED_BUILTIN, LOW);
 
-  delay(1000);
+    delay(1000);
 }

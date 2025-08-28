@@ -1,6 +1,18 @@
 # .clang-format
 
+# LLVM Style
 BasedOnStyle: LLVM
+
+# Determine indenting
+IndentWidth: 4
+
+# Dont allow tab indenting
+UseTab: Never
+
 BreakBeforeBraces: Allman
+
+# No singleline if statements
 AllowShortIfStatementsOnASingleLine: false 
+
+# No single line functions
 AllowShortFunctionsOnASingleLine: None
