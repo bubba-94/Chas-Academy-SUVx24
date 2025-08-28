@@ -118,9 +118,15 @@ Complemented with local hooks and a basic understanding for GitOps.
 
 * What is continuous testing, and how does it differ from running tests manually?
 
+  Continuous testing are run in parallel with the development instead of running tests in the end manually.
+
 * Give an example of a tool used for automated testing.
 
+  GitLab
+
 * How can automated testing improve code quality?
+
+  Automated testing can discover faulting code faster.
 
 ______
 
@@ -128,16 +134,28 @@ ______
 
 * What is GitHub Actions used for?
 
+  It is a CI/CD platform where you can automate the development process. GitHub Actions provides the possibility to automate the building, testing and deployment process.
+
 * What is the difference between a workflow, a job, and a step?
 
+  A **workflow** is the whole process of CI/CD and **HOW** it is executed, a workflow can be a collection of one or more **jobs**.
+  A **job** is a collection of steps/scripts that can be used for configuring, building, testing.
+  A **step** is an instruction that executes and determines what is to be done when a ceratin **action** is required.
+
 * How can GitHub Actions improve team collaboration?
+
+  It automates the process and removes the human aspect of communication in a way.
 
 ### GitOps intro
 
 * What is GitOps?
 
+  GitOps utilizes the second part of the workflow and includes deployment, monitoring, feedback.
+
 * What does it mean that GitOps is declarative?
 
-* How does GitOps ensure continuous syncing between Git and the running system?
+  Instead of providing a set of step-by-step instructions on how to achieve a desired state, you define what you want your system to be in configuration files stored in a Git repository.
 
 * What advantages does GitOps bring compared to traditional ops?
+
+Enhanced security through version control and a reduced attack surface, increased reliability via automated deployments and easy rollbacks, improved efficiency from automation and faster recovery times, and better collaboration and transparency by using Git as the single source of truth for all infrastructure changes.
