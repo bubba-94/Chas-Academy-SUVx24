@@ -1,0 +1,15 @@
+# .clang-tidy
+
+Checks: "-*,readability-identifier-naming"
+
+CheckOptions:
+
+    # Ensures camelCase for functions (readSensor())
+    - { key: readability-identifier-naming.FuntionCase, value: camelBack }
+
+    # Ensure camelCase for basic variables (int, float)
+    - { key: readability-identifier-naming.VariableCase, value: camelBack }
+
+    # Ensure upper case naming for constants (const int) 
+    - { key: readability-identifier-naming.ConstantCase, value: UPPER_CASE }
+    
