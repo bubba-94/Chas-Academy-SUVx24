@@ -1,0 +1,20 @@
+{
+  "name": "chas-academy-suvx24",
+  "version": "1.0.0",
+  "description": "School related assignments.   This folder will follow some of the development throughout my 2-yr System Developer in C/C++ for Chas Academy.   Let's hope both me and you will find this useful.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bubba-94/Chas-Academy-SUVx24.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bubba-94/Chas-Academy-SUVx24/issues"
+  },
+  "homepage": "https://github.com/bubba-94/Chas-Academy-SUVx24#readme"
+}

@@ -17,11 +17,6 @@ jobs:
   build-job: 
     runs-on: ubuntu-latest
     steps: 
-      - name: init a node project
-        run: |
-          mkdir node-project
-          cd node-project
-          npm init -y
 
       - name: Checkout premade repo/action
         uses: actions/checkout@v4
