@@ -23,7 +23,7 @@ jobs:
       
       - name: Build Node.js project
         uses: actions/setup-node@v3
-        wtih: 
+        with: 
           node-version: "20"
 
       - name: install dependencies
