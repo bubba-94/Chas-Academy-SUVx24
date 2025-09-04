@@ -1,0 +1,9 @@
+# Create a YAML structure for a book with a title, author
+# and an embedded strucutre of publication info
+
+book: 
+  title: "Babblarna"
+  author: "Babbel"
+  publication: 
+    publisher: "Bonnier"
+    year: 2024

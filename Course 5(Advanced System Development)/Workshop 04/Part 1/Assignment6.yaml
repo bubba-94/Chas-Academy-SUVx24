@@ -1,0 +1,12 @@
+# Understand the --- operator to divide two or more documents inside one yaml file
+# Create a YAML-file that contains two separate documents: user(with name and age) and procduct(wtih name och price).
+
+---
+user:
+  name: Johan
+  age: 31
+
+---
+product: 
+  name: Lenovo Ideapad Slim3
+  price: 5790

@@ -1,0 +1,9 @@
+# Create a yaml strucutre that represents a person with name, age and a list of hobbies
+
+person: 
+  name: Johan Modin
+  age: 31
+  hobbies:
+  - food
+  - food
+  - fooood

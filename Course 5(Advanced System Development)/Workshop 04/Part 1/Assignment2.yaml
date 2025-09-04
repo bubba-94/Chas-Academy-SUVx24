@@ -1,0 +1,12 @@
+# Create a list of your three favorite languages
+
+# This is called an inline-list
+languages: 
+  - C++
+  - C#
+  - C
+
+# This is called an block-list
+languagues: [C++, C#, C]
+
+# Both syntax work

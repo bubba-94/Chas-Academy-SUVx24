@@ -1,0 +1,17 @@
+# Create a YAML struture where a description exceeds one line with the literal block scalar | operator
+# which tells the YAML file to keep everything as written, including row breaks.
+
+# key 
+description: | 
+  this operator will allow several rows of information 
+  like this, 
+  and it will still be a valid inside the YAML 
+
+anotherDescription: >
+  this operator will allow several rows of information
+  like this, 
+  but it will not preserve row break. So it will print
+  everything in ONE line
+
+
+   

@@ -1,0 +1,10 @@
+# Learn to use the comment operator inside YAML
+
+# Represent a server
+server: 
+  # Represent the name of a server
+  name: "Telia 5"
+  # Determine port of server
+  port: "8080"
+  # Determine the address of the server
+  ip: "0.0.0.0"
