@@ -1,0 +1,35 @@
+# Build an action that get automatically run at push to main 
+# the workflow should build a Node.js project by first 
+# checking, setting up Node.js and install dependencies and finally build
+
+# Exercies fully implementing an CI build step in GitHub Actions
+# use completed actions from GitHub Marketplace
+# install dependencies
+# run build steps automatically at code changes
+
+name: Push and build
+
+on: [push]
+  branches: main
+
+jobs: 
+
+  build-job: 
+    runs-on: ubuntu-latest
+    steps: 
+      - name: init a node project
+        run: |
+          mkdir node-project
+          cd node-project
+          npm init -y
+
+      - name: Checkout premade repo/action
+        uses: actions/checkout@v4
+      
+      - name: Build Node.js project
+        uses: actions/setup-node@v3
+
+      - name: install dependencies
+        run: | 
+          npm --install 
+          npm run node build 

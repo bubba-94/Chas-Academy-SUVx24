@@ -20,9 +20,6 @@ jobs:
 
     runs-on: ubuntu-latest
     steps:
-      - name: version of wsl
-        run: wsl --version
- 
       - name: python version
         run: python3 --version
 
