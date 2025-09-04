@@ -31,4 +31,4 @@ jobs:
 
       - name: build npm  
         run: npm run build
-        # Something wrong with build, figure out later?
+        # npm links to package.json in root that gets init when you run "npm init -y"

@@ -1,0 +1,39 @@
+# Extend the workflow so that building automatically from a push to main 
+# several Node.js versions i parallel jobs with the help of strategy.matrix
+
+# Exercise matrix-strategy in GitHub Actions
+# Ensure that the project build on several Nodeversion (new and previous ones)
+# Learn to reuse same steps over more jobs without duplicating code 
+
+name: Matrix workflow
+
+on: 
+  push:
+    branches: main
+
+
+jobs: 
+
+  matrix: 
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        # Include OS 16,18,20 on all diffrent OS
+        os: [ubuntu-latest, windows-latest, macos-latest]
+        node-version: [16.x, 18.x, 20.x]
+
+        #exclude:
+        #include: 
+    
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Use Node.js matrix ${{ matrix.node-version }}
+        uses: actions/setup-node@v3
+        with: 
+          node-version: ${{ matrix.node-version }}
+      - run: npm install
+      - run: npm run build
+      - run: npm test
+
+          
