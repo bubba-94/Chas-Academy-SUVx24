@@ -31,5 +31,5 @@ jobs:
 
       - name: install dependencies
         run: | 
-          npm --install 
+          npm install 
           npm run node build 
