@@ -1,0 +1,41 @@
+# Implement a Workflow that runs automatically at push to main. Workflow should be run on a Winwdows env
+# and control which version of Node.js and NPM is installed.
+
+# Practice writing and implementing a GitHub Action-workflow with
+# a trigger (on: push)
+# a workenv in a determined env (runs-on)
+# steps that run commands in terminal (run)
+
+name: A simple workflow and will checkout version
+
+# will run when stuff get pushed to main
+on: 
+  push: 
+    branches: main
+
+
+jobs:
+
+  version-job:
+
+    runs-on: ubuntu-latest
+    steps:
+      - name: version of wsl
+        run: wsl --version
+
+    steps: 
+      - name: python version
+        run: python3 --version
+
+  windows-job:
+
+    runs-on: windows-latest
+    steps:
+      - name: version of Node
+        run: node --version
+
+  macos-job: 
+    runs-on: macos-latest
+    steps: 
+      - name: version of NPM
+        run: npm --version       
