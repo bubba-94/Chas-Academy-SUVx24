@@ -6,7 +6,7 @@
 # use completed actions from GitHub Marketplace
 # install dependencies
 # run build steps automatically at code changes
-name: Push and build
+name: create a node project
 
 on: [push]
   branches: main
