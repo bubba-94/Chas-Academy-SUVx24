@@ -36,4 +36,7 @@ jobs:
       - run: npm run build
       - run: npm test
 
+# Finished and working 
+# npm building and installing relies on the local package.json file where 
+# jobs npm run build and npm test are run.
           

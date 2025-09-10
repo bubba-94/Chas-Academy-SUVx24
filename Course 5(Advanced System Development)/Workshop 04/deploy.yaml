@@ -1,0 +1,54 @@
+# Create a workflow that 
+# Runs automattically at push to main 
+# Builds a Node.js project
+# Saves the buildresult as an artifact 
+# Fetches the artifact in a separate job and publishes to GitHub Pages
+
+# Practice to fully understand the CI/CD flow i GitHub Actions
+# Automized build in a separate job
+# THe use of artifacts to transfer results between jobs
+# Automatic deployment to GitHub Pages
+
+name: Push build and depoloy
+
+on: 
+  push: 
+    branches: main
+
+
+jobs:
+  # Every job needs an ID
+  builds:
+    
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v3
+        with: 
+          node-version: 20  
+      - name: install npm
+        run: npm install
+
+      - name: build npm
+        run: npm run build
+
+      - name: Upload artifact (dist)
+        uses: actions/upload-artifact@v3
+        with:
+          name: dist
+          path: dist/
+
+  deploy:
+    needs: builds
+    runs-on: ubuntu-latest
+    steps: 
+      - name: Download artifact
+        uses: actions/download-artifcat@v3
+        with: 
+          name: dist
+
+      - name: Deploy to GitHub Pages
+        uses: actions/actions-gh-pages@v4
+        with: 
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./dist
