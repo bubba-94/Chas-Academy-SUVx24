@@ -9,5 +9,5 @@ services:
     develop:
       watch:
         - action: sync
-          path: .
+          path: 
           target: /code

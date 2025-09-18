@@ -1,0 +1,11 @@
+services:
+
+  webserver: 
+    build: flask-API
+    ports: 
+      - 8001:5070
+
+  webclient:
+    build: API-writer-py
+    depends_on: 
+      - webserver
