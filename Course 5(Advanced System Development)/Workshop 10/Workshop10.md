@@ -25,6 +25,12 @@
 * **Social security** numbers is nto handled by private persons but can be used to identify a person.
 * **BankID** is connected to a unit and identity that is registered and can be used to ensure an identity.
 
+#### Reflection
+
+The terms provided from Azure are very straight forward and can be applied in different environments.  
+The EXACT description or function of what the terms can provide is still ofcourse a little bit unclear.  
+You are always going to learn more when you start to use the actual platform.
+
 _____
 
 ### Build a webapp
