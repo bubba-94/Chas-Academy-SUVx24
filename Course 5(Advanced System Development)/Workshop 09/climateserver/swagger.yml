@@ -1,0 +1,77 @@
+openapi: 3.0.0
+info:
+  title: "Climate server REST API"
+  description: "An API Documentation about climates from certain weather stations"
+  version: "1.0.0"
+
+servers:
+  -url : "/api"
+
+components:
+  schemas:
+    SensorReading:
+      type: "object"
+      required:
+        - humid
+        - temp
+        - timestamp
+      properties:
+        humid:
+          type: number
+          format: float
+          description: "Humidity in PCT"
+        temp:
+          type: number
+          format: float
+          description: "Temperature in C"
+        timestamp:
+          type: string
+          format: date-time
+          decsription: "Timestamp when the reading was executed"
+
+  parameters:
+    reg: 
+      name: "reg"
+      description: "Number of the sensor eg. 1,2,3 or 4"
+      in: path
+      required: true
+      schema: 
+        type: "string"
+
+paths:
+  /sensor:
+    get:
+      operationId: "climate.read_all"
+      tags:
+        - Sensor
+      summary: "Read data from all sensors"
+      responses:
+        "200": 
+          description: "Succesfully read all sensors"
+
+    delete:
+      operationId: "climate.delete"
+      tags:
+        - Sensor
+      summary: "Delete all sensors and included data"
+      responses:
+        "204":
+          description: "Successfully deleted all sensors and included data"
+
+  /sensor/{reg}:
+    put:
+      operationId: "climate.update_sensor"
+      tags: [Sensor]
+      summary: "Update an existing sensor"
+      parameters: 
+        - $ref: "#/components/parameters/reg"
+      requestBody: 
+        description: "Updated sensor reading data"
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/SensorReading"
+      responses:
+        "200":
+          description: "Successfully updated sensor reading"
