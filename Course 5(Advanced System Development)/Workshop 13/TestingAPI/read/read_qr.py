@@ -9,6 +9,6 @@ def qr_reader(img_path):
     decoded_list = decode(img)
 
     res = (
-        f"{decoded_list[0].data.decode()}, "
+        f"{decoded_list[0].data.decode()}"
     )
     return res
