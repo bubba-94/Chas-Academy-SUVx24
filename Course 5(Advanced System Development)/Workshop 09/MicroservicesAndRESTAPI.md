@@ -44,16 +44,9 @@ The independence. A monolithic system is a big cluster that communicates on many
 
 #### What is a message broker-system good for?
 
-### Scalability 
+### Scalability
 
 #### Whats the difference between horzontal scaling and vertical scaling?
 
 * **Horizontal scaling:**
 * **Vertical scaling:**
-
-
-
-
-
-
-

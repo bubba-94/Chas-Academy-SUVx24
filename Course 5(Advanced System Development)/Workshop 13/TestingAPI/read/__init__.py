@@ -1,0 +1,1 @@
+from .read_qr import qr_reader
